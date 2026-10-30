@@ -3,7 +3,6 @@ import {
   MailIcon,
   SiteFooter,
   SiteHeader,
-  Star,
 } from "./_components/site";
 
 const products = [
@@ -39,14 +38,6 @@ const beams = [
   { tone: "cool", y: "6%" },
 ];
 
-function PinIcon() {
-  return (
-    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-      <path d="M8 1.5a4.75 4.75 0 0 0-4.75 4.75C3.25 9.9 8 14.5 8 14.5s4.75-4.6 4.75-8.25A4.75 4.75 0 0 0 8 1.5Zm0 6.5a1.75 1.75 0 1 1 0-3.5A1.75 1.75 0 0 1 8 8Z" />
-    </svg>
-  );
-}
-
 export default function HomePage() {
   return (
     <>
@@ -80,8 +71,8 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="btn btn-lg"
             >
-              <Star />
               Visit Nonda AI
+              <ExternalIcon />
             </a>
             <a
               href="https://listuply.com"
@@ -89,8 +80,8 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="btn btn-lg"
             >
-              <PinIcon />
               Visit Listuply
+              <ExternalIcon />
             </a>
           </div>
           <p className="hero-meta">

@@ -72,18 +72,9 @@ a {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
   font-weight: 600;
   font-size: 1.0625rem;
   letter-spacing: -0.01em;
-}
-
-.brand svg {
-  width: 1.15rem;
-  height: 1.15rem;
-  color: var(--accent);
 }
 
 .site-nav {
