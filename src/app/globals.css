@@ -293,16 +293,6 @@ a {
   word-spacing: 0.15em;
 }
 
-.meta-mail {
-  font-style: normal;
-}
-
-@media (max-width: 520px) {
-  .meta-mail {
-    display: none;
-  }
-}
-
 .hero-meta span {
   margin: 0 0.6rem;
   opacity: 0.6;

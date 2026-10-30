@@ -86,9 +86,6 @@ export default function HomePage() {
           </div>
           <p className="hero-meta">
             nonda.ai<span>|</span>listuply.com
-            <i className="meta-mail">
-              <span>|</span>support@afterwishinc.com
-            </i>
           </p>
         </section>
 
