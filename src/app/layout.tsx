@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const sans = Instrument_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
   display: "swap",
 });
 
@@ -36,6 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Afterwish, Inc.",
   },
+  metadataBase: new URL("https://afterwishinc.com"),
   robots: {
     index: true,
     follow: true,
@@ -74,8 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="min-h-screen bg-[#FAFAFA] font-sans text-zinc-900 selection:bg-zinc-900 selection:text-white">
+    <html lang="en" className={sans.variable}>
+      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
